@@ -1,0 +1,27 @@
+[
+    {
+        "username": "Test_User",
+        "email": "testUser@test.user",
+        "password": "Password01!"
+    },
+    {
+        "username": "Use_Tester",
+        "email": "userTest@test.user",
+        "password": "pAssword02@"
+    },
+    {
+        "username": "Kalima_Heart",
+        "email": "kalima@gmail.com",
+        "password": "paSsword03#"
+    },
+    {
+        "username": "Gorgug",
+        "email": "gorgug@thistlespring.bad",
+        "password": "password04$@"
+    },
+    {
+        "username": "Bleem",
+        "email": "birdFacts@getinthecomme.nts",
+        "password": "password05%"
+    }
+]
