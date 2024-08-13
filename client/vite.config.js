@@ -8,9 +8,9 @@ let define;
     define = {
       plugins: [react()],
       //One for prod one local
-      define:{
-        global: "window",
-      },
+      // define:{
+      //   global: "window",
+      // },
       server: {
         port: PORT,
         open: true,
