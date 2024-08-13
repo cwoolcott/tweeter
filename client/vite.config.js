@@ -1,14 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 let define;
 // https://vitejs.dev/config/
-if (process.env.NODE_ENV && process.env.NODE_ENV === "production") {
-  define = {
-    plugins: [react()]
-    }
-  }
-   else {
+///if (process.env.NODE_ENV && process.env.NODE_ENV === "production") {
+
     define = {
       plugins: [react()],
       //One for prod one local
@@ -16,7 +12,7 @@ if (process.env.NODE_ENV && process.env.NODE_ENV === "production") {
         global: "window",
       },
       server: {
-        port: 3000,
+        port: PORT,
         open: true,
         proxy: {
           "/graphql": {
@@ -27,7 +23,7 @@ if (process.env.NODE_ENV && process.env.NODE_ENV === "production") {
         },
       },
     }
-  }
+  
 
   export default defineConfig(define);
 

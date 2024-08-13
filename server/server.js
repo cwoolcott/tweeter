@@ -24,10 +24,10 @@ app.use(express.json());
 //     }
 //   }
 // }));
-app.use(cors())
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`)
-})
+// app.use(cors())
+// app.listen(PORT, () => {
+//   console.log(`Example app listening on port ${PORT}`)
+// })
 
 const apolloServer = new ApolloServer({ typeDefs, resolvers });
 
@@ -106,9 +106,9 @@ async function startApolloServer() {
   });
 
   db.once('open', () => {
-    server.listen(3001, () => {
-      console.log("Server is running on port 3001");
-      console.log('graphql available at http://localhost:3001/graphql');
+    server.listen(PORT, () => {
+      console.log("Server is running on port " + PORT);
+      console.log('graphql available at http://localhost:' + PORT + '/graphql');
     });
   })
 };
