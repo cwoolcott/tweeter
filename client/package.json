@@ -9,7 +9,6 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "proxy":"https://tweeter-tkk8.onrender.com",
   "dependencies": {
     "@apollo/client": "^3.7.14",
     "bcrypt": "^5.1.1",
@@ -24,17 +23,17 @@
     "vite": "^4.4.5",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.8",
-    "socket.io-client": "^4.7.5"
+    "socket.io-client": "^4.7.5",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "vite": "^4.4.5"
   }
 }
