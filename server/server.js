@@ -51,7 +51,7 @@ async function startApolloServer() {
 
   const io = new Server(server, {
     cors: {
-      // origin: "http://localhost:3000", // Replace with your client URL
+      origin: "tweeter-tkk8.onrender.com", // Replace with your client URL
       methods: ["GET", "POST"]
     }
   });
