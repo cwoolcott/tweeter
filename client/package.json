@@ -9,6 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "proxy":"https://tweeter-tkk8.onrender.com",
   "dependencies": {
     "@apollo/client": "^3.7.14",
     "bcrypt": "^5.1.1",
